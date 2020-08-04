@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Catel</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Catel.MVVM" Version="5.12.7" />
+  </ItemGroup>
+
+  <Import Project="..\Catel.ViewModels.Shared\Catel.ViewModels.Shared.projitems" Label="Shared" />
+
+</Project>

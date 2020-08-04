@@ -4,8 +4,8 @@
               xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
               xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
               xmlns:local="clr-namespace:Catel.Views"
-              xmlns:viewModels="clr-namespace:Catel.ViewModels;assembly=Catel.PortableCore"
-              xmlns:catel="http://catel.codeplex.com"
+              xmlns:viewModels="clr-namespace:Catel.ViewModels;assembly=Catel.ViewModels.Full"
+              xmlns:catel="http://schemas.catelproject.com"
               mc:Ignorable="d" d:DataContext="{d:DesignInstance viewModels:ChildViewModel}"
               Title="{Binding Title}" Height="300" Width="300">
     <Grid>

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mugen.View.Wpf", "Mugen.View.Wpf\Mugen.View.Wpf.csproj", "{FE1FF5C3-9D6D-4635-81D6-35CBA7A8AFF8}"
 EndProject
@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Light.View.Wpf", "Light.Vie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism.View.Wpf", "Prism.View.Wpf\Prism.View.Wpf.csproj", "{29108663-7CB2-456A-ABC0-281C193D042D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catel.View.Wpf", "Catel.View.Wpf\Catel.View.Wpf.csproj", "{A3EE4B0E-7254-45E7-8939-5D404D3B32B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catel.View.Wpf.Full", "Catel.View.Wpf.Full\Catel.View.Wpf.Full.csproj", "{A3EE4B0E-7254-45E7-8939-5D404D3B32B3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mugen.View.WinForms", "Mugen.View.WinForms\Mugen.View.WinForms.csproj", "{520B86E3-800C-42FA-AC97-29DAB287526C}"
 EndProject
@@ -25,15 +25,30 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mugen.PortableCore", "Mugen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.PortableCore", "Caliburn.PortableCore\Caliburn.PortableCore.csproj", "{8F16883F-25D4-4A7E-A4BF-6854911B6B17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catel.PortableCore", "Catel.PortableCore\Catel.PortableCore.csproj", "{EA6CD1D3-1B07-4E63-93AD-0D9B7D56C8B9}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Light.PortableCore", "Light.PortableCore\Light.PortableCore.csproj", "{183C7173-A80E-45A3-B7BF-A3780A70BBB9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism.PortableCore", "Prism.PortableCore\Prism.PortableCore.csproj", "{17631C0E-064D-4CC4-BA62-00CF0BFC368A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reactive.PortableCore", "Reactive.PortableCore\Reactive.PortableCore.csproj", "{78F28E9D-A516-496B-A230-769163602D16}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catel.ViewModels.Core", "Catel.ViewModels.Core\Catel.ViewModels.Core.csproj", "{128D6A23-1A66-46EF-B3B6-DF0C5E705A5D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catel.View.Wpf.Core", "Catel.View.Wpf.Core\Catel.View.Wpf.Core.csproj", "{15930F42-5F69-4972-8E8E-AB48D04276C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catel", "Catel", "{91FB24CD-325B-4FBA-9A65-0E1571644089}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Catel.ViewModels.Shared", "Catel.ViewModels.Shared\Catel.ViewModels.Shared.shproj", "{E638ED0A-2111-4147-A31C-35DE6292B05A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catel.ViewModels.Full", "Catel.ViewModels.Full\Catel.ViewModels.Full.csproj", "{7BC1333B-A57E-49F4-A832-DB2FE4D92751}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catel.View.Wpf.Multi", "Catel.View.Wpf.Multi\Catel.View.Wpf.Multi.csproj", "{50C86FE0-5457-48DD-95FA-F5B933DF76F7}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Catel.ViewModels.Shared\Catel.ViewModels.Shared.projitems*{128d6a23-1a66-46ef-b3b6-df0c5e705a5d}*SharedItemsImports = 5
+		Catel.ViewModels.Shared\Catel.ViewModels.Shared.projitems*{7bc1333b-a57e-49f4-a832-db2fe4d92751}*SharedItemsImports = 4
+		Catel.ViewModels.Shared\Catel.ViewModels.Shared.projitems*{e638ed0a-2111-4147-a31c-35de6292b05a}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -83,10 +98,6 @@ Global
 		{8F16883F-25D4-4A7E-A4BF-6854911B6B17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F16883F-25D4-4A7E-A4BF-6854911B6B17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F16883F-25D4-4A7E-A4BF-6854911B6B17}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EA6CD1D3-1B07-4E63-93AD-0D9B7D56C8B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EA6CD1D3-1B07-4E63-93AD-0D9B7D56C8B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EA6CD1D3-1B07-4E63-93AD-0D9B7D56C8B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EA6CD1D3-1B07-4E63-93AD-0D9B7D56C8B9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{183C7173-A80E-45A3-B7BF-A3780A70BBB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{183C7173-A80E-45A3-B7BF-A3780A70BBB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{183C7173-A80E-45A3-B7BF-A3780A70BBB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -99,8 +110,35 @@ Global
 		{78F28E9D-A516-496B-A230-769163602D16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78F28E9D-A516-496B-A230-769163602D16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78F28E9D-A516-496B-A230-769163602D16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{128D6A23-1A66-46EF-B3B6-DF0C5E705A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{128D6A23-1A66-46EF-B3B6-DF0C5E705A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{128D6A23-1A66-46EF-B3B6-DF0C5E705A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{128D6A23-1A66-46EF-B3B6-DF0C5E705A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15930F42-5F69-4972-8E8E-AB48D04276C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15930F42-5F69-4972-8E8E-AB48D04276C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15930F42-5F69-4972-8E8E-AB48D04276C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15930F42-5F69-4972-8E8E-AB48D04276C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BC1333B-A57E-49F4-A832-DB2FE4D92751}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BC1333B-A57E-49F4-A832-DB2FE4D92751}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BC1333B-A57E-49F4-A832-DB2FE4D92751}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BC1333B-A57E-49F4-A832-DB2FE4D92751}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50C86FE0-5457-48DD-95FA-F5B933DF76F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50C86FE0-5457-48DD-95FA-F5B933DF76F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50C86FE0-5457-48DD-95FA-F5B933DF76F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50C86FE0-5457-48DD-95FA-F5B933DF76F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A3EE4B0E-7254-45E7-8939-5D404D3B32B3} = {91FB24CD-325B-4FBA-9A65-0E1571644089}
+		{128D6A23-1A66-46EF-B3B6-DF0C5E705A5D} = {91FB24CD-325B-4FBA-9A65-0E1571644089}
+		{15930F42-5F69-4972-8E8E-AB48D04276C7} = {91FB24CD-325B-4FBA-9A65-0E1571644089}
+		{E638ED0A-2111-4147-A31C-35DE6292B05A} = {91FB24CD-325B-4FBA-9A65-0E1571644089}
+		{7BC1333B-A57E-49F4-A832-DB2FE4D92751} = {91FB24CD-325B-4FBA-9A65-0E1571644089}
+		{50C86FE0-5457-48DD-95FA-F5B933DF76F7} = {91FB24CD-325B-4FBA-9A65-0E1571644089}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E278E9CD-9C35-4485-A834-BDA43FEFF597}
 	EndGlobalSection
 EndGlobal
